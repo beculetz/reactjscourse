@@ -1,0 +1,57 @@
+{
+  "users": [
+    {
+      "email": "p@p.com",
+      "password": "$2a$10$pVXhgNqe2HEQom8rBiNwq.2OYT69CEIZP9sgGBPcfENHIBNHPpT32",
+      "firstName": "Paul",
+      "lastName": "Negoescu",
+      "id": 1
+    },
+    {
+      "email": "a@a.com",
+      "password": "$2a$10$l.ErmfRp81rajq.mR11QRO/IxV.Lv9sOrgITLwOYBi2exILdQ8xM2",
+      "firstName": "Paul",
+      "lastName": "Negoescu",
+      "id": 2
+    },
+    {
+      "email": "p@pdsad.com",
+      "password": "$2a$10$KmklQ75o5EXV8g90IqZ6We4kjNft.JcDR034e4c/Fuzqp4bxk23Ea",
+      "firstName": "Paul",
+      "lastName": "Negoescu",
+      "id": 3
+    }
+  ],
+  "todos": [
+    {
+      "id": 4,
+      "userId": 1,
+      "title": "Sleep",
+      "completed": true
+    },
+    {
+      "userId": 1,
+      "title": "Buy milk",
+      "completed": false,
+      "id": 5
+    },
+    {
+      "userId": 2,
+      "title": "Visit grandma",
+      "completed": false,
+      "id": 6
+    },
+    {
+      "userId": 2,
+      "title": "Buy Christmas gifts",
+      "completed": true,
+      "id": 7
+    },
+    {
+      "userId": 2,
+      "title": "asdsadsa",
+      "completed": false,
+      "id": 8
+    }
+  ]
+}
