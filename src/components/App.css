@@ -1,0 +1,120 @@
+
+/* 
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-dark: #000b0d;
+  --primary: #154b52;
+  --primary-light: #1c8394;
+  --secondary-dark: #390d02;
+  --secondary-light: #a52502;
+  --error-color: var(--secondary-light);
+  --text-on-dark: #efefef;
+
+  color: var(--primary-dark);
+  font-family: sans-serif;
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+
+  font-size: 1.6rem;
+}
+
+.brandForm {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 150px 1fr;
+}
+
+.brandForm .secondColumn {
+  grid-column-start: 2;
+}
+
+.brandForm .btn {
+  justify-self: start;
+}
+
+.brandForm label {
+  align-self: center;
+  justify-self: end;
+}
+
+.brandForm input:not([type='checkbox'], [type='radio']) {
+  padding: 0.5rem 0.5rem;
+
+  border: 1px solid var(--primary-dark);
+  border-radius: 3px;
+} */
+
+:root {
+  --primary-dark: #000b0d;
+  --primary: #154b52;
+  --primary-light: #1c8394;
+  --secondary-dark: #390d02;
+  --secondary-light: #a52502;
+  --error-color: var(--secondary-light);
+  --text-on-dark: #efefef;
+}
+
+.brandForm .passwordInput {
+  position: relative;
+
+  & > input {
+    width: 100%;
+  }
+
+  & > button.showHideEye {
+    position: absolute;
+    right: 0;
+    top: -0.48rem;
+
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.8rem;
+  }
+}
+
+.fieldError {
+  color: var(--error-color);
+  margin: 0;
+}
+
+input:has(+ .fieldError),
+select:has(+ .fieldError),
+textarea:has(+ .fieldError),
+.passwordInput:has(+ .fieldError) > input {
+  border-color: var(--error-color);
+  color: var(--error-color);
+  outline-color: var(--error-color);
+}
+
+label:has(+ input + .fieldError),
+label:has(+ .passwordInput + .fieldError) {
+  color: var(--error-color);
+}
+
+/* .btn {
+  padding: 0.5rem 1rem;
+
+  background-color: var(--primary);
+  border: 1px solid var(--primary-dark);
+  border-radius: 3px;
+  color: var(--text-on-dark);
+  cursor: pointer;
+
+  &:disabled {
+    background-color: color-mix(in srgb, var(--primary) 40%, white 60%);
+    cursor: not-allowed;
+  }
+}
+
+.hidden {
+  display: none !important;
+} */
+
+

@@ -1,0 +1,29 @@
+.greenCheck {
+    color: #10ab80;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+}
+
+.redX {
+    color: crimson;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+}
+
+.greenDaysLeft {
+    color: #10ab80;
+    text-align: right;
+}
+
+.redDaysLeft {
+    color:crimson;
+    text-align: right;
+}
+
+.loaderContainer {
+    margin:30px auto;
+    padding: 30px;
+    text-align: center;
+}
